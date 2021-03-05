@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "genres.component.sass"
+    ],
+    "names": [],
+    "file": "genres.component.css"
+}

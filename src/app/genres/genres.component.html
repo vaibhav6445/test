@@ -1,0 +1,33 @@
+<style>
+  .gnrs-ul {
+  list-style-type: none;
+}
+ul.gnrs-ul li {
+    font-size: 20px;
+    padding: 15px 10px;
+    border: -b;
+    border-bottom: 1px solid #ccc;
+}
+ul.gnrs-ul li:hover{
+  border-bottom: 1px solid #000;
+}
+ul.gnrs-ul li a{
+  color: #000;
+}
+</style>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">Genres</h1>
+
+            <ul class="gnrs-ul">
+              <li *ngFor="let genrs of Genres?.genres">
+                <a routerLink="/movie-list/{{genrs.id}}">{{genrs.name}}</a>
+              </li>
+            </ul>
+       
+        </div>
+    </div>
+</div>

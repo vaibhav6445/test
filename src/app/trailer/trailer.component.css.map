@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACZ,QAAQ,EAAE,QAAQ;EAClB,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,IAAI;EACjB,MAAM,EAAE,CAAC;EACT,QAAQ,EAAE,MAAM;CAOE;;AAZpB,AAOE,aAPW,CAOX,MAAM,CAAC;EACL,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,CAAC;EACN,IAAI,EAAE,CAAC;EACP,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,GAAG;CAAG",
+    "sources": [
+        "trailer.component.sass"
+    ],
+    "names": [],
+    "file": "trailer.component.css"
+}

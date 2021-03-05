@@ -1,0 +1,205 @@
+.custom_bg {
+  background-image: radial-gradient(circle at 20% 50%, rgba(50, 20, 20, 0.98) 0%, rgba(70, 35, 35, 0.88) 100%);
+}
+
+.details-bg {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  will-change: opacity;
+  -webkit-transition: -webkit-filter 1s;
+  transition: -webkit-filter 1s;
+  transition: filter 1s;
+  transition: filter 1s, -webkit-filter 1s;
+}
+
+.details-container {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 1000px;
+  background: transparent;
+  z-index: 0;
+}
+
+.details-poster {
+  display: block;
+  width: 300px;
+  height: 450px;
+  border-width: 0px;
+  outline: none;
+}
+
+.details-info {
+  width: 100%;
+  height: 100%;
+}
+
+.details-info h3 {
+  font-weight: 600;
+  line-height: 1.3em;
+  font-size: 1.3em;
+}
+
+.movie-title {
+  margin: 0;
+}
+
+.movie-actions {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 68px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  list-style-type: none;
+  line-height: 1.4em;
+}
+
+.movie-actions li {
+  font-size: 0.9em;
+  margin-right: 20px;
+  color: #ffffff;
+}
+
+.movie-actions li .play-video {
+  color: #ffffff;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 0.7em;
+}
+
+.movie-actions li .play-video:hover {
+  opacity: 0.6;
+}
+
+.movie-actions li.chart {
+  background: transparent;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 68px;
+}
+
+.movie-actions li.chart .text {
+  font-weight: 700;
+  margin-left: 6px;
+  line-height: 1.5em;
+  white-space: pre-line;
+  font-size: 0.7em;
+}
+
+.outer_ring {
+  width: 60px;
+  height: 60px;
+  padding: 3px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #081c22;
+}
+
+.release-date {
+  opacity: 0.6;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.overview p {
+  line-height: 2.0em;
+}
+
+.details-info {
+  color: #ffffff;
+}
+
+.details-info .featured {
+  margin-top: 30px;
+}
+
+ol.people {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ol.people li {
+  background-color: transparent;
+  height: auto;
+  width: 33%;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  text-align: left;
+  margin-bottom: 14px;
+  margin-right: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 20px;
+}
+
+ol.people li p {
+  font-size: 1em;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+ol.people li p.character {
+  font-weight: bold;
+  font-size: 1.0em;
+}
+
+.genres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  list-style-type: none;
+}
+
+.genres h3 {
+  margin-right: 18px;
+}
+/*# sourceMappingURL=details.component.css.map */

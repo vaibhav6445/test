@@ -1,0 +1,71 @@
+<section role="main">
+  <div class="details-bg" *ngIf="MovieDetails.poster_path"
+    [style.backgroundImage]="'url(https://image.tmdb.org/t/p/w500'+MovieDetails.backdrop_path+')'">
+    <div class="custom_bg">
+      <div class="details-container">
+        <div style="padding: 0;background: transparent;">
+          <mat-grid-list cols="6" rowHeight="600px" gutterSize="0">
+            <mat-grid-tile colspan="2" gutterSize="0">
+              <img src="https://image.tmdb.org/t/p/w500{{MovieDetails.poster_path}}" class="details-poster"
+                alt="{{MovieDetails.title}}" />
+            </mat-grid-tile>
+            <mat-grid-tile colspan="4">
+              <mat-card-content class="details-info">
+                <mat-card-title>
+                  <h2 class="movie-title">{{MovieDetails.original_title}}
+                    <span class="release-date">({{MovieDetails.release_date|dateFormat:'YYYY'}})</span>
+                  </h2>
+                </mat-card-title>
+                <mat-card-title>
+                  <ul class="movie-actions">
+                    <li class="chart">
+                      <div mat-card-avatar class="outer_ring">
+                        <mat-progress-spinner diameter="60"
+                          [ngClass]="MovieDetails.vote_average*10>70 ? 'high-rate' : 'low-rate'" mode="determinate"
+                          [value]="MovieDetails.vote_average*10">
+                        </mat-progress-spinner>
+                        <div class="circle-content">
+                          <small>{{ MovieDetails.vote_average * 10 }}<sup>%</sup></small>
+                        </div>
+                      </div>
+                      <div class="text">User<br />Score</div>
+                    </li>
+
+                  </ul>
+                </mat-card-title>
+                <h3>Overview</h3>
+                <div class="overview">
+                  <p>
+                    {{MovieDetails.overview}}
+                  </p>
+                </div>
+                <h3 class="featured" dir="auto">Featured Crew</h3>
+                <ol class="people">
+                  
+                  
+                  <li class="profile">
+                    <p class="character">English</p>
+                    <p>Original Language</p>
+                  </li>
+                
+                  
+                  <li class="profile">
+                    <p class="character">{{MovieDetails.revenue | currency}}</p>
+                    <p>Revenue</p>
+                  </li>
+                </ol>
+                <div class="genres">
+                  <h3>Genres</h3>
+                  <mat-chip-list aria-label="Genres selection">
+                    <mat-chip [style.backgroundColor]="'grey'" [style.color]="'white'"
+                      *ngFor="let genre of MovieDetails.genres">{{genre.name}}</mat-chip>
+                  </mat-chip-list>
+                </div>
+              </mat-card-content>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
